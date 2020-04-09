@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+</head>
+<body>
+	<div class="page-wraper">
+		<header class="page-header">
+			<div class="page-header__logo">
+				<img src="img/Logo.svg" alt="GllacyShop">
+			</div>
+		<nav class="main-nav">
+			<ul class="main-nav__items">
+				<li class="main-nav__item">
+					<a href="/" class="main-nav__link">Каталог</a>
+					<ul class="main-nav__popup">
+						<li class="main-nav__popup-item">
+							<a href="/" class="main-nav__popup-header">Новинки</a>
+						</li>
+						<li class="main-nav__popup-item">
+							<a href="/" class="main-nav__popup-link">Сливочное</a>
+						</li>
+						<li class="main-nav__popup-item">
+							<a href="/" class="main-nav__popup-link">Щербеты</a>
+						</li>
+						<li class="main-nav__popup-item">
+							<a href="/" class="main-nav__popup-link">Фруктовый лед</a>
+						</li>
+						<li class="main-nav__popup-item">
+							<a href="/" class="main-nav__popup-link">Мелорин</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-nav__item">
+					<a href="/" class="main-nav__link">Доставка и оплата</a>
+				</li>
+				<li class="main-nav__item">
+					<a href="/" class="main-nav__link">О компании</a>
+				</li>
+			</ul>
+		</nav>
+
+			<div class="page-header__search">
+				<span class="page-header__search-label">Поиск
+				</span>
+				<form class="page-header__search-form" action="/" method="get">
+					<input type="text" name="search-query" placeholder="Что ищем?">
+				</form>
+			</div>
+
+			<div class="page-header__user">
+				<div class="page-header__user-login">
+					<span class="page-heade__user-label">Вход</span>
+					<form class="page-header__login-form" action="/" method="post">
+						<input type="email" name="email" placeholder="Электронная почта">
+						<input type="password" name="password" placeholder="Пароль">
+						<input class="btn page-header__login-button" type="submit" value="Войти">
+						<a href="#" class="page-header__login-link">Забыли пароль?</a>
+						<a href="#" class="page-header__login-link">Новая регистрация</a>
+					</form>
+				</div>
+				<div class="page-header__user-basket">
+					<span class="page-header__basket-label">2 товара</span>
+					<form class="page-header__basket-form" action="/" method="post">
+						<table class="page-header__basket-items">
+							<caption>Товары в корзине:</caption>
+							<tbody>
+								<tr class="page-header__basket-item">
+									<td>
+										<button class="btn page-header__item-remove-btn">x</button>
+									</td>
+									<td>
+										<p class="page-header__item-desc">Пломбир с апельсиновым джемом</p>
+									</td>
+									<td>
+										<span class="page-header__item-amount">1.5кг</span>x
+										<span class = "page-header__item-price">200 руб.</span>
+									</td>
+									<td class="page-header__item-sum">300 руб.</td>
+								</tr>
+								<tr class="page-header__basket-item">
+									<td>
+										<button class="btn page-header__item-remove-btn">x</button>
+									</td>
+									<td>
+										<p class="page-header__item-desc">Клубничный с присыпкой из белого шоколада</p>
+									</td>
+									<td>
+										<span class="page-header__item-amount">1.5кг</span>x
+										<span class = "page-header__item-price">300 руб.</span>
+									</td>
+									<td class="page-header__item-sum">450 руб.</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+								<td>
+									<span class="page-header__item-total">
+										450 руб.
+									</span>
+								</td>
+								</tr>
+							</tfoot>
+						</table>
+						<a class="btn page-header__basket-btn">Оформить заказ</a>
+					</form>
+				</div>
+			</div>
+			<div class="page-header__contacts">	
+			<span class="page-header__contacts-schedule">С 10 до 20, ежедневно</span>
+			<span class="page-header__contacts-phone">8 812 450-25-25</span>
+			</div>
+			
+		</header>
+		<main class="page-content">
+			<div class="promo-slider">
+				<input type="radio" name="promo-slider__toogle" id="btn-1" value="0" checked>
+				<input type="radio" name="promo-slider__toogle" id="btn-2" value="1">
+				<input type="radio" name="promo-slider__toogle" id="btn-3" value="2">
+				<div class="page-slider__controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
+			<div class="promo-slider__items">
+				<div class="promo-slider__item">
+					<h2>Крем брюле и пломбир с малиновым джемом</h2>
+					<img src="/" alt="">
+				</div>
+				<div class="promo-slider__item">
+					<h2>Шоколадный пломбир и лимонный сорбет</h2>
+					<img src="/" alt="">
+				</div>
+				<div class="promo-slider__item">
+					<h2>Пломбир с помадкой и клубничный щербет</h2>
+					<img src="/" alt="">
+				</div>
+				<a href="#" class="btn promo-slider__btn"> Давайте оба!</a>
+				</div>
+			</div>
+			<section class="promo-cards">
+				<div class="promo-cards__item">
+				<h2 class="promo-cards__title">Малинка даром!</h2>
+					<p class="promo-cards__content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<a href="/" class="btn promo-cards__link">Хочу варенье!</a>
+				</div>
+				<div class="promo-cards__item">
+					<h2 class="promo-cards__title">Шоколадки даром!</h2>
+					<p class="promo-cards__content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<a href="/" class="btn promo-cards__link">Хочу шоколадки!</a>
+				</div>
+				</section>
+				<section class="promo-hits">
+					<div class="promo-hits__item"></div>
+					<div class="promo-hits__item"></div>
+					<div class="promo-hits__item"></div>
+					<div class="promo-hits__item"></div>
+				</section>
+
+		</main>
+		<footer class="page-footer"></footer>
+	</div>
+	
+</body>
+</html>
