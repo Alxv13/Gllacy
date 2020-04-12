@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
+	<meta charset="utf-8">
+	<title>Gllacy</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="page-wraper">
@@ -12,7 +14,7 @@
 		<nav class="main-nav">
 			<ul class="main-nav__items">
 				<li class="main-nav__item">
-					<a href="/" class="main-nav__link">Каталог</a>
+					<a href="/catalog.html" class="main-nav__link">Каталог</a>
 					<ul class="main-nav__popup">
 						<li class="main-nav__popup-item">
 							<a href="/" class="main-nav__popup-header">Новинки</a>
@@ -50,29 +52,31 @@
 
 			<div class="page-header__user">
 				<div class="page-header__user-login">
-					<span class="page-heade__user-label">Вход</span>
-					<form class="page-header__login-form" id="login-form" action="/" method="post">
+					<span class="page-header__label page-header__label--login">Вход</span>
+					<form class="login-form" id="login-form" action="/" method="post">
 						<input type="email" name="email" placeholder="Электронная почта">
 						<input type="password" name="password" placeholder="Пароль">
-						<input class="btn page-header__login-button" type="submit" value="Войти">
-						<a href="#" class="page-header__login-link">Забыли пароль?</a>
-						<a href="#" class="page-header__login-link">Новая регистрация</a>
+						<input class="btn" type="submit" value="Войти">
+						<div class="login-form__link-items">
+						<a class="login-form__link-item" href="#">Забыли пароль?</a>
+						<a class="login-form__link-item" href="#">Новая регистрация</a>
+						</div>
 					</form>
 				</div>
 				<div class="page-header__user-basket">
-					<span class="page-header__basket-label">2 товара</span>
+					<span class="page-header__label page-header__label--basket">Пусто</span>
 						<div class="page-header__basket-popup">
-					
-						<table class="page-header__basket-items">
+						<table class="basket-table">
 							<caption class="visually-hidden">Товары в корзине:</caption>
 							<tbody>
-								<tr class="page-header__basket-item">
-									<td>
-										<button class="btn page-header__item-remove-btn">Удалить</button>
+								<tr class="basket-table__item">
+									<td class="basket-table__col-control">
+										<button class="basket-table__btn basket-table__btn--remove">Удалить</button>
 									</td>
-									<td>
-										<p class="page-header__item-desc">Пломбир с апельсиновым джемом</p>
+									<td class="basket-table__col-preview">
+										<img src="img/basket-icon-1.jpg" alt="Пломбир с апельсиновым джемом">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 									</td>
+									<td class="basket-table__col-label">Пломбир с апельсиновым джемом</td>
 									<td>
 										<span class="page-header__item-amount">1.5кг</span>x
 										<span class = "page-header__item-price">200 руб.</span>
