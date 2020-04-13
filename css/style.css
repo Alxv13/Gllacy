@@ -1,0 +1,155 @@
+@font-face {
+font-family: "Roboto";
+src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Roboto";
+src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
+font-weight: bold;
+font-style: normal;
+}
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto", "Arial", "sans-serif";
+	font-size: 18px;
+	line-height: 22px;
+	font-style:normal;
+	font-weight: normal;
+	color: #ffffff;
+	background-color: #849d8f;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 9px 15px;
+	margin:0;
+	margin-bottom: 20px;
+	min-width: 239px;
+	font-family: "Roboto", "Arial", "sans-serif";
+	font-size: 14px;
+	line-height: 24px;
+	font-style: normal;
+	font-weight: normal;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+}
+
+.page-wrapper {
+	min-width: 900px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*.overlay
+.overlay--show
+.overlay--hide
+.hidden
+*/
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn {
+	display: inline-block;
+	padding: 11px 20px;
+	font-family: "Roboto", "Arial", "sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	white-space: normal;
+	background-color: #f06542;
+	background: linear-gradient(to top, #e74a35, #f26843);
+	color: #ffffff;
+	border: none;
+	border-radius: 23px;
+	cursor: pointer;
+	outline: none;
+}
+
+
+/***********LOGIN FORM************/
+
+.login-form {
+	display: block;
+	padding: 20px 19px;
+	width: 239px;
+	font-size: 0px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+}
+
+.login-form__link-items {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	width: 123px;
+	line-height: 0px;
+}
+
+.login-form__link-item {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
+}
+
+/************basket table**********/
+
+
+.basket-table {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.basket-table__btn {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	font-size: 0px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+/*!!!!!!!!!!!!!!!!!!!*/
+.basket-table__btn--remove {
+	background-image: url("img/cross.svg");
+}
+
+.basket-table__item td {
+	vertical-align: middle;
+}
+
+.basket-table__item--total {
+	text-align: right;
+}
+
+.basket-table__item--total td {
+	padding: 0px;
+	text-align: right;
+
+}
